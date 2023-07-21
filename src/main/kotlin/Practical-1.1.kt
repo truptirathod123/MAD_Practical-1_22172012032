@@ -1,20 +1,40 @@
 fun main() {
-    println("Welcome uvpce")
-    var a = 16;
-    var b = 2.3;
-    var c = 'T';
-    var d = "HMS";
-    var e = 96.36;
-    var f = 338927847;
-    var g = -2
-    var h = 127
-    println("integer value:$a")
-    println("float value:$b")
-    println("Character value:$c")
-    println("string value:$d")
-    println("Double value:$e")
-    println("long value:$f")
-    println("Short value:$g")
-    println("Byte value:$h")
-}
+    var a: Int = 5
+    var b: Float = 1.5F
+    var c: Char = 'T'
+    var d: Double = 24.57
+    var e: Boolean = false
+    var f: String = "hello"
+    var g: Long = 333892456
+    var h: Short = -2
+    var i: Byte = 127
 
+    println("$a:Integer variable")
+    println("$b:Float variable")
+    println("$c:Character variable")
+    println("$d:Double variable")
+    println("$e:Boolean variable")
+    println("$f:String variable")
+    println("$g:Long variable")
+    println("$h:Short variable")
+    println("$i:Byte variable")
+}
+    //val j:Int=5
+    //val k:Double=22.3
+    //val l:Float=1.5F
+    //val m:Char='k'
+    //val n:Boolean=true
+    //val o:Long=256432467
+    //val p:Short=-2
+    //val q:Byte=123
+    //val r:String="Hii"
+
+    //println("$j:integer constant")
+    //println("$k:double constant")
+    //println("$l:float constant")
+    //println("$m:char constant")
+    //println("$n:boolean constant")
+    //println("$o:long constant")
+    //println("$p:short constant")
+    //println("$q:byte constant")
+    //println("$r:string constant")
