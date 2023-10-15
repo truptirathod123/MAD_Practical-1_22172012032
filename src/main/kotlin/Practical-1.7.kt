@@ -1,23 +1,16 @@
-fun main() {
-    val number = readNumber("Enter number: ")
-    val factorial = calculateFactorial(number)
-    println("Factorial $number = $factorial")
-    println("By TailRec keyword, factorial of 5 = $factorial")
+fun main()
+{
+    print("Enter Number:")
+    var number = readLine()!!.toInt()
+    val factorial = fact(number)
+    println("Factorial of$number = $factorial")
 }
-
-fun readNumber(message: String): Int {
-    print(message)
-    return readLine()?.toIntOrNull() ?: run {
-        println("Invalid input, using default value 5.")
-        5
-    }
+tailrec fun fact(n:Int,temp:Int = 1):Int { return if(n==1)
+{
+    temp
 }
-
-fun calculateFactorial(n: Int): Int {
-    return if (n == 0 || n == 1) {
-        1
-    } else {
-        n * calculateFactorial(n - 1)
-    }
+else
+{
+    fact(n-1,temp*n)
 }
-
+}
